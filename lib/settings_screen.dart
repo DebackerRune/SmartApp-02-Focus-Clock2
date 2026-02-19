@@ -10,6 +10,8 @@ class SettingsScreen extends HookWidget {
     final colorScheme = Theme.of(context).colorScheme;
     
     // State for toggles - using hooks
+    // Note: These settings are not persisted and will reset on app restart
+    // For production, consider using SharedPreferences or a state management solution
     final show24HourFormat = useState(true);
     final showSeconds = useState(true);
     final showDate = useState(true);

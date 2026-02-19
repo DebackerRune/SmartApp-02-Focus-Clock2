@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -125,6 +127,4 @@ class ClockScreen extends HookWidget {
     
     return '$weekday, $month $day, $year';
   }
-
-  double min(double a, double b) => a < b ? a : b;
 }
